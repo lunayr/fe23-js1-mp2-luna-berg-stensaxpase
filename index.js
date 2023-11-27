@@ -11,7 +11,6 @@ const omgångLog = document.getElementById("omgång-log");
 
 function startGame() {
   // If the player tries to start the game without writing their name or if they only write a number, return false so the game doesn't start
-  inputName.value;
   if (inputName === "" || !isNaN(inputName.value)) {
     alert("Enter ditt namn för att starta spelet");
     return false;
