@@ -1,3 +1,4 @@
+const sectionStart = document.getElementById("section-start");
 const inputName = document.getElementById("input-name");
 const btnEnter = document.getElementById("btn-enter");
 const sectionGame = document.getElementById("section-game");
@@ -5,7 +6,6 @@ const welcomeName = document.getElementById("welcome-name");
 const btnRestart = document.getElementById("btn-restart");
 const nameLog = document.getElementById("name-log");
 const winnerLog = document.getElementById("winner-log");
-const sectionStart = document.getElementById("section-start");
 const choiceLog = document.getElementById("choice-log");
 const omgångLog = document.getElementById("omgång-log");
 
