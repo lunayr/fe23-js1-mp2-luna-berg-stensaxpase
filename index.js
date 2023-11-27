@@ -94,7 +94,7 @@ function reset() {
   paper.addEventListener("click", playGame);
 }
 
-// How to determine the winner?
+// How to determine the round's winner?
 function whoWinner(player, computer) {
   if (player === computer) {
     return "Det är tie";
