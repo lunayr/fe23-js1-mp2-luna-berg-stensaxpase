@@ -1,6 +1,6 @@
-const sectionStart = document.getElementById("section-start");
 const inputName = document.getElementById("input-name");
 const btnEnter = document.getElementById("btn-enter");
+const sectionStart = document.getElementById("section-start");
 const sectionGame = document.getElementById("section-game");
 const welcomeName = document.getElementById("welcome-name");
 const btnRestart = document.getElementById("btn-restart");
