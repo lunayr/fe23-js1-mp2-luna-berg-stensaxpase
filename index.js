@@ -102,7 +102,7 @@ function whoWinner(player, computer) {
     (player === "Scissors" && computer === "Paper") ||
     (player === "Paper" && computer === "Rock")
   ) {
-    return `${inputName.value} vann`;
+    return `${player} vann`;
   } else if (
     (player === "Rock" && computer === "Paper") ||
     (player === "Scissors" && computer === "Rock") ||
