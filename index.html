@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sten, sax, påse</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="text/javascript" src="index.js" defer></script>
+  </head>
+  <body>
+    <section class="section-start" id="section-start">
+      <h1>Sten-Sax-Påse Spel</h1>
+      <div>
+        <label for="playerName" id="label-name">Namn</label>
+        <input type="text" id="input-name" />
+        <button type="button" id="btn-enter" class="btn">Start</button>
+      </div>
+    </section>
+
+    <section class="section-game hidden" id="section-game">
+      <h2 id="welcome-name">Welcome</h2>
+      <div>
+        <img
+          id="Rock"
+          src="imgs/—Pngtree—cartoon hand painted stone material_5455663.png"
+          alt="rock"
+        />
+        <img
+          id="Scissors"
+          src="imgs/Red-scissors-illustration-on-transparent-background.png"
+          alt="scissors"
+        />
+        <img
+          id="Paper"
+          src="imgs/image-from-rawpixel-id-6557060-original.png"
+          alt="paperillustration"
+        />
+      </div>
+    </section>
+
+    <section id="section-log">
+      <div id="omgång-log"></div>
+
+      <div id="choice-log"></div>
+
+      <div id="name-log"></div>
+
+      
+      <div id="winner-log"></div>
+      <button type="button" id="btn-restart" class="btn hidden">Restart</button>
+    </section>
+  </body>
+</html>

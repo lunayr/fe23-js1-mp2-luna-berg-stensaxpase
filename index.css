@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+body {
+  background-color: rgb(20, 19, 19);
+  color: aliceblue;
+  font-family: "Press Start 2P", sans-serif;
+}
+
+h1 {
+  font-size: 32px;
+  padding: 64px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.section-start > div {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 128px;
+}
+
+.section-start {
+  height: 100%;
+  flex-direction: column;
+}
+
+#input-name {
+  padding: 8px 8px;
+  margin-top: 8px;
+  margin-bottom: 32px;
+}
+
+.btn {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-family: "Press Start 2P";
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.btn:hover {
+  background-color: aquamarine;
+}
+
+.section-game {
+  height: 100%;
+  flex-direction: column;
+}
+
+.section-game h2 {
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 64px;
+}
+
+.section-game > div > img {
+  height: 200px;
+  cursor: pointer;
+}
+
+.section-game > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 128px;
+  gap: 64px;
+}
+
+#section-log {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+  margin-top: 64px;
+}
+
+#winner-log {
+  font-size: 24px;
+  color: rgb(168, 127, 255);
+}
+
+#choice-log,
+#name-log {
+  font-size: 18px;
+}
