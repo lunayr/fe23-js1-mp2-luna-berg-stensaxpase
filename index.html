@@ -10,11 +10,11 @@
   <body>
     <section class="section-start" id="section-start">
       <h1>Sten-Sax-Påse Spel</h1>
-      <div>
+      <form id="usernameForm">
         <label for="playerName" id="label-name">Namn</label>
         <input type="text" id="input-name" />
-        <button type="button" id="btn-enter" class="btn">Start</button>
-      </div>
+        <button type="submit" id="btn-enter" class="btn">Start</button>
+      </form>
     </section>
 
     <section class="section-game hidden" id="section-game">
@@ -45,7 +45,6 @@
 
       <div id="name-log"></div>
 
-      
       <div id="winner-log"></div>
       <button type="button" id="btn-restart" class="btn hidden">Restart</button>
     </section>

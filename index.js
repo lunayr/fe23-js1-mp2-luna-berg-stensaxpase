@@ -8,15 +8,16 @@ const nameLog = document.getElementById("name-log");
 const winnerLog = document.getElementById("winner-log");
 const choiceLog = document.getElementById("choice-log");
 const omgångLog = document.getElementById("omgång-log");
+const usernameForm = document.getElementById("usernameForm");
 
-function startGame() {
-  // If the player tries to start the game without writing their name or if they only write a number, return false so the game doesn't start
-  if (inputName.value === "" || !isNaN(inputName.value)) {
-    alert("Enter ditt namn för att starta spelet");
-    return false;
-  }
-  return true;
-}
+// function startGame() {
+//   // If the player tries to start the game without writing their name or if they only write a number, return false so the game doesn't start
+//   if (inputName.value === "" || !isNaN(inputName.value)) {
+//     alert("Enter ditt namn för att starta spelet");
+//     return false;
+//   }
+//   return true;
+// }
 
 //////////////////////////////////////
 // Gameplay
@@ -112,10 +113,11 @@ function whoWinner(player, computer) {
   }
 }
 
-// Start the game
-btnEnter.addEventListener("click", function () {
-  // Start the game if the function returns TRUE:
-  if (startGame()) {
+usernameForm.addEventListener("submit", handleFormSubmit);
+
+function handleFormSubmit(event) {
+  event.preventDefault();
+  if (inputName.value !== "") {
     // Remove the start-page by adding hidden class
     sectionStart.classList.add("hidden");
 
@@ -124,8 +126,25 @@ btnEnter.addEventListener("click", function () {
 
     // Welcome the player-name
     welcomeName.innerText = `Welcome ${inputName.value}!`;
+  } else {
+    alert("Enter ditt namn för att starta spelet");
   }
-});
+}
+
+// // Start the game
+// btnEnter.addEventListener("click", function () {
+//   // Start the game if the function returns TRUE:
+//   if (startGame()) {
+//     // Remove the start-page by adding hidden class
+//     sectionStart.classList.add("hidden");
+
+//     // Adding the game-page by removing its hidden class
+//     sectionGame.classList.remove("hidden");
+
+//     // Welcome the player-name
+//     welcomeName.innerText = `Welcome ${inputName.value}!`;
+//   }
+// });
 
 // calling the reset function, putting back the event listeners
 reset();
