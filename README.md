@@ -1,1 +1,1 @@
-# fe23-js1-mp2-luna-berg
+# Sten, Sax, Påse Spel
