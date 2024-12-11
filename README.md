@@ -1,1 +1,1 @@
-# Sten, Sax, Påse Spel
+# Rock paper scissors
